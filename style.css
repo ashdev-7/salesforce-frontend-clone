@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar {
+    /* position: fixed;
+    top: 0;
+    z-index: 100000; */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    position:sticky;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding: 18px;
+    align-items: center;
+    font-size: 18px;
+
+    .top-left {
+        display: flex;
+        align-items: center;
+
+        .nav-logo {
+            height: 52px;
+        }
+
+        .nav-menu-ul {
+            display: flex;
+            list-style: none;
+
+            /* text-decoration: dashed;  NOT WORKING */
+
+            .nav-menu-ul-li {
+                padding-left: 20px;
+                padding-right: 20px;
+                font-size:large;
+                font-style: normal;
+
+                .li-link {
+                    text-decoration: none;
+                    color: rgb(3, 3, 107);
+                }
+            }
+        }
+    }
+
+    .top-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 24px;
+        padding-left: 8px;
+        padding-right: 8px;
+
+        .contact-us{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 16px;
+            height: 16px;
+
+            .contact-us-text{
+                font-family:'Times New Roman', Times, serif;
+                text-decoration: underline 0.5px;
+                
+            }
+            .contact-us-num{
+                font-family:'Times New Roman', Times, serif;
+                text-wrap: nowrap;
+            }
+
+        }
+
+        .top-right-icons {
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            width: 100%;
+
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .top-right-link{
+                display: flex;
+                justify-content: space-between;
+                padding: 2px;
+            }
+
+            .top-right-login {
+                display: flex;
+                align-items: center;
+                color: rgb(3, 3, 107);
+
+                .top-right-link{
+                    text-decoration: none;
+                    color: rgb(3, 3, 107);
+                }
+            }
+        }
+
+        .try-for-free {
+                color: white;
+                background-color: green;
+                padding: 16px;
+                border-radius: 6px;
+                width: 100%;
+                justify-content: center;
+        }
+    }
+}
+
+.sticky-chat{
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    border-radius: 8px;
+    width: 20%;
+    background-color: rgb(11, 105, 182);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .sticky-chat-logo{   
+        border: 1px solid gray;
+        box-shadow: 4px 1px black;
+        border-radius: 100%;
+        margin: 22px;
+    }
+
+    .sticky-chat-heading{
+        color: white;
+        padding: 8px;
+        font-size: 22px;
+    }
+
+    .sticky-chat-text{
+        color: white;
+        padding: 8px;
+        margin: 8px;
+    }
+    
+}
+
+.just-announced {
+    display: flex;
+    padding: 14px;
+    justify-content: center;
+    background-color: rgb(3, 41, 107);
+    color: white;
+
+    .just-announced-link {
+        padding-left: 12px;
+        color: white;
+    }
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 12px; */
+    margin-top: 0px;
+    background-image: url(./sf-hero-bg.jpg);
+    background-size: cover;
+
+    .hero-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin: 34px;
+
+        .hero-head {
+            width: 80%;
+            display: flex;
+            font-size: 64px;
+            color: rgb(3, 3, 107);
+        }
+    
+        .hero-details {
+            display: flex;
+            width: 80%;
+            margin-top: 24px;
+            font-size: 22px;
+        }
+    
+        .hero-buttons {
+            display: flex;
+            flex-direction: row;
+            margin-top: 42px;            
+    
+            #start-free-trial-button {
+                padding: 20px;
+                margin-right: 28px;
+                border: 2px solid rgb(0, 115, 255);
+                background-color: rgb(0, 115, 255);
+                color: white;
+                border-radius: 8px;
+
+            }
+    
+            #watch-demo-button {
+                padding: 20px;
+                border: 2px solid rgb(0, 115, 255);
+                color: rgb(0, 115, 255);
+                border-radius: 8px;
+            }
+        }
+    }
+
+    .hero-right{
+        width: 50%;;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 32px;
+
+        .hero-right-video{
+            aspect-ratio: 1.5;
+            height: 50%;
+            width: 75%;
+            border-radius: 12px;
+        }
+    }
+}
+
+.sec2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    margin: 48px;
+    color: rgb(3, 3, 107);
+}
+
+.card-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 12px;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 2px 8px gray;
+    margin: 24px;
+
+    .card-bg-img{
+        width: 100%;
+        height: 50%;
+    }
+
+    .card-head{
+        font-size: 24px;
+        margin-top: 24px;
+       
+    }
+    .card-text{
+        font-size: 18px;
+        margin-top: 24px;
+      
+    }
+    .card-learn-more{
+        font-size: 16px;
+        margin-top: 32px;
+        margin-bottom: 24px;
+       
+    }
+
+  }
